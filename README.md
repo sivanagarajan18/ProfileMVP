@@ -8,7 +8,7 @@ Supports smooth transition animations and state preservation when switching back
 ## ✨ Features
 
 - 📱 **Two Layouts**  
-  - Grid layout (two-column card-style profiles).  
+  - Grid layout (horizontal card-style profiles).  
   - Fullscreen layout (horizontal paging between profiles).  
 
 - 🔄 **Smooth Toggle**  
