@@ -39,17 +39,20 @@ Supports smooth transition animations and state preservation when switching back
 ## 📂 Project Structure
 
 ├── Models/
-│ └── Profile.swift
+│	└── CoreData/
+│		├── CoreDataManager.swift
+│  		└── ProfileSeeder
 ├── Views/
-│ ├── ProfileCollectionViewCell.xib
-│ └── ProfileCollectionViewCell.swift
+│	└── ProfileCollectionViewCell/
+│ 		├── ProfileCollectionViewCell.xib
+│ 		└── ProfileCollectionViewCell.swift
 ├── Presenters/
-│ └── ProfilePresenter.swift
+│ 	└── ProfilePresenter.swift
 ├── Controllers/
-│ └── ProfileViewController.swift
+│ 	└── ProfileViewController.swift
 ├── Resources/
-│ └── Assets.xcassets
-│ └── Main.storyboard
+│ 	└── Assets.xcassets
+│ 	└── Main.storyboard
 └── README.md
 
 
