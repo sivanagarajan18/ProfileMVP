@@ -61,7 +61,7 @@ Supports smooth transition animations and state preservation when switching back
 ## 🚀 Getting Started
 
 1. Clone the repo:
-   ```git clone https://github.com/yourusername/profile-viewer.git -> cd profile-viewer```
+   ```git clone https://github.com/sivanagarajan18/ProfileMVP.git -> cd profile-viewer```
 Open the project in Xcode:
   ```open ProfileViewer.xcodeproj```
 
