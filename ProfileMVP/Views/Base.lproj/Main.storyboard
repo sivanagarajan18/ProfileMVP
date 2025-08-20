@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ProfileViewController" customModule="ProfileMVP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iw6-pH-7Zl">
+                                <rect key="frame" x="0.0" y="451" width="393" height="333"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="NVv-7q-GPX">
+                                    <size key="itemSize" width="300" height="500"/>
+                                    <size key="estimatedItemSize" width="300" height="500"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileCollectionViewCell" id="rU8-7G-aWh" customClass="ProfileCollectionViewCell" customModule="ProfileMVP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-83.666666666666671" width="300" height="500"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jOB-jx-9EP">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="300" height="500"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1ld-qC-Wa9"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ABE-yW-gw2"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEj-TC-lIf">
+                                <rect key="frame" x="16" y="151" width="361" height="299.99999999999994"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xt9-pk-aR9">
+                                        <rect key="frame" x="60" y="8" width="241" height="50"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="xYm-ul-gO4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover trusted nutritionists, explore healthy lifestyles, and find the right guidance to fuel your body and mind." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVW-Yo-xPr">
+                                        <rect key="frame" x="8" y="66" width="345" height="226"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xt9-pk-aR9" firstAttribute="top" secondItem="dEj-TC-lIf" secondAttribute="top" constant="8" id="52L-T2-War">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="uVW-Yo-xPr" secondAttribute="bottom" constant="8" id="Fog-zM-c94"/>
+                                    <constraint firstAttribute="trailing" secondItem="uVW-Yo-xPr" secondAttribute="trailing" constant="8" id="Kg3-Ek-FpL"/>
+                                    <constraint firstItem="xt9-pk-aR9" firstAttribute="leading" secondItem="dEj-TC-lIf" secondAttribute="leading" constant="60" id="dy7-vQ-oKm"/>
+                                    <constraint firstItem="uVW-Yo-xPr" firstAttribute="top" secondItem="xt9-pk-aR9" secondAttribute="bottom" constant="8" id="eBZ-TG-BFa">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="300" id="l50-IJ-llg"/>
+                                    <constraint firstItem="uVW-Yo-xPr" firstAttribute="leading" secondItem="dEj-TC-lIf" secondAttribute="leading" constant="8" id="toP-3n-WNA">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="300"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="xt9-pk-aR9" secondAttribute="trailing" constant="60" id="wZm-ls-6Eh">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="iw6-pH-7Zl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3jL-N8-rgG"/>
+                            <constraint firstItem="iw6-pH-7Zl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" priority="999" id="8TP-AU-x1c"/>
+                            <constraint firstItem="iw6-pH-7Zl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="250" id="DJG-MK-Uzt"/>
+                            <constraint firstItem="iw6-pH-7Zl" firstAttribute="top" secondItem="dEj-TC-lIf" secondAttribute="bottom" id="IQz-8j-7by"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iw6-pH-7Zl" secondAttribute="bottom" id="O41-0E-JNR"/>
+                            <constraint firstItem="iw6-pH-7Zl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PUR-sa-Zct"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dEj-TC-lIf" secondAttribute="trailing" constant="16" id="ZBk-DO-AW9"/>
+                            <constraint firstItem="dEj-TC-lIf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mhj-bb-6PA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionTopToCenterY" destination="8TP-AU-x1c" id="vUi-NP-CZu"/>
+                        <outlet property="collectionTopToTop" destination="DJG-MK-Uzt" id="SHS-EM-7Id"/>
+                        <outlet property="collectionView" destination="iw6-pH-7Zl" id="bjO-CY-f9N"/>
+                        <outlet property="topView" destination="dEj-TC-lIf" id="BBi-kc-GiI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-89.312977099236633" y="24.647887323943664"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="512" height="512"/>
+    </resources>
+</document>
